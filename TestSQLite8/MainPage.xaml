@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TestSQLite8.ViewModel"
+             x:Class="TestSQLite8.MainPage"
+             x:DataType="vm:BookViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="0"
+            Padding="15"
+            VerticalOptions="Center">
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+            <Label Text="Test Demo NET 8" SemanticProperties.HeadingLevel="Level1" HorizontalOptions="Center" FontSize="32"/>
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="150"
+                HorizontalOptions="Center" />
+
+            <Label Text="Book ID"/>
+            <Entry Placeholder="Book ID" Text="{Binding BookId}"/>
+
+            <Label Text="Author Name"/>
+            <Entry Placeholder="Author Name" Text="{Binding AuthorName}"/>
+
+            <Label Text="Book Name"/>
+            <Entry Placeholder="Book Name" Text="{Binding BookName}"/>
+
+            <Grid RowDefinitions="*" ColumnDefinitions="*,*" ColumnSpacing="30" Padding="20">
+                <Button Grid.Column="0" Text="Search" Command="{Binding SearchCommand}" />
+                <Button Grid.Column="1" Text="Save" Command="{Binding SaveCommand}"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

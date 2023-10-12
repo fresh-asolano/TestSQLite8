@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSQLite8", "TestSQLite8\TestSQLite8.csproj", "{AFB3FED5-5EAC-4F00-965A-8127F1189184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFB3FED5-5EAC-4F00-965A-8127F1189184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB3FED5-5EAC-4F00-965A-8127F1189184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB3FED5-5EAC-4F00-965A-8127F1189184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB3FED5-5EAC-4F00-965A-8127F1189184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD5F0694-94CA-4739-BBED-A18567CBC8CB}
+	EndGlobalSection
+EndGlobal
